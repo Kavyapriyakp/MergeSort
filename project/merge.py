@@ -1,3 +1,8 @@
+import time 
+  
+# store starting time 
+begin = time.time() 
+
 def merge(arr, l, a, b): 
     n1 = a - l + 1
     n2 = b- a 
@@ -65,3 +70,10 @@ mergeSort(arr,0,n-1)
 print ("\nSorted Array is") 
 for i in range(n): 
     print ("%d" %arr[i]) 
+
+time.sleep(1) 
+# store end time 
+end = time.time() 
+  
+# total time taken 
+print(f"Total runtime of the program is {end - begin}")     
